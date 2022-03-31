@@ -26,13 +26,13 @@ exports.entree_stock = async (req, res, next) => {
 		if (data.provenance === "licence") {
 			if (data.licence_url === "" || !data.licence_url)
 				return next({
-					message: "L'url de la licence d'importation est requise",
+					message: "L'url de la licence d'importation est requise.",
 				});
 
 			licence_url = data.licence_url;
 		} else if (data.provenance === "facture") {
 			if (data.factureId === "" || !data.factureId)
-				return next({ message: "L'id de la facture est requise" });
+				return next({ message: "L'id de la facture est requis." });
 
 			factureId = data.factureId;
 		} else if (data.provenance !== "interne") {
