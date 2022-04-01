@@ -6,15 +6,7 @@
   "scripts": {
     "start": "node server.js",
     "dev": "nodemon server",
-    "app": "concurrently \"npm run dev\" \"cd client && npm start\"",
-    "production-build": "concurrently \"npm run dev\" \"cd client && npm run build\"",
-    "build": "cd client && npm run build",
-<<<<<<< HEAD
-    "install": "npm i && cd client && yarn install",
-    "test": "cd client && npm run test"
-=======
-    "install": "npm i && cd client && yarn install"
->>>>>>> ae0324f1262f87d6b523f7c7413f4951fbed2044
+    "app": "concurrently \"npm run dev\" \"cd client && npm start\""
   },
   "author": "Sam",
   "license": "MIT",
